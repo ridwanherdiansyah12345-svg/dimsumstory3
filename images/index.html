@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dimsum Story – Dimsum Favoritmu</title>
+<meta name="description" content="Dimsum Story: dimsum original, kuah, goreng, mentai, dan lava. Pesan mudah lewat WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<!-- Navigasi utama untuk berpindah ke setiap bagian halaman -->
+<header>
+ <div class="container nav">
+  <a href="#home" class="logo">🥟 Dimsum Story</a>
+  <button class="burger" id="burger" aria-label="Buka menu">☰</button>
+  <nav id="nav">
+   <a href="#tentang">Tentang</a><a href="#menu">Dimsum</a>
+    <a href="#keunggulan">Keunggulan</a><a href="#ulasan">Foto Ulasan</a><a href="#lokasi">Lokasi</a>
+  </nav>
+ </div>
+</header>
+
+<!-- Bagian pembuka dengan ajakan memesan dan foto produk -->
+<section class="hero" id="home">
+ <div class="container">
+  <!-- Tata letak responsif: teks dan foto bertumpuk di ponsel, berdampingan di layar lebar. -->
+  <div class="row g-4 align-items-center hero-layout">
+  <div class="hero-copy col-12 col-lg-6 text-center text-lg-start">
+   <p class="eyebrow">Dimsum segar & hangat</p>
+   <h1>Setiap Gigitan Punya Cerita</h1>
+    <p>Dimsum hangat dengan aneka rasa, cocok untuk makan bareng teman, keluarga, atau camilan sendiri.</p>
+   <a class="btn wa" href="#" data-order="Halo Dimsum Story, saya mau pesan.">Pesan via WhatsApp</a>
+  </div>
+
+  <div class="photo-stack col-12 col-lg-6">
+  <img class="main-photo" src="dimsum%20mentai.jpg" alt="Dimsum mentai Dimsum Story">
+  <img class="small-photo" src="dimsum%20original.jpg" alt="Dimsum original Dimsum Story">
+  </div>
+  </div>
+ </div>
+</section>
+
+<!-- Profil singkat dan ringkasan Dimsum Story -->
+<section id="tentang" class="about">
+ <div class="container">
+  <!-- Tata letak responsif: gambar dan teks menjadi dua kolom di layar lebar. -->
+  <div class="row g-4 align-items-center about-grid">
+  <div class="col-12 col-lg-6"><img src="dimsum%20mentai.jpg" alt="Dimsum mentai buatan Dimsum Story"></div>
+  <div class="col-12 col-lg-6">
+   <h2 style="text-align:left">Tentang Dimsum Story</h2>
+  <p>Dimsum Story lahir dari kecintaan pada dimsum yang hangat, lembut, dan bisa dinikmati siapa saja. Kami membuat dimsum segar setiap hari dengan bahan pilihan, lalu menyajikannya dengan berbagai rasa: original, kuah, goreng, mentai, dan lava.</p>
+    <p>Kami fokus menghadirkan dimsum dengan rasa yang konsisten, hangat, dan mudah dinikmati di berbagai momen.</p>
+   <div class="stats">
+    <div><b>5</b><span>Varian Dimsum</span></div>
+     <div><b>100%</b><span>Dibuat Segar</span></div>
+    <div><b>5</b><span>Rasa Utama</span></div>
+   </div>
+  </div>
+  </div>
+ </div>
+</section>
+
+<!-- Daftar produk dibuat secara dinamis oleh script.js -->
+<section id="menu">
+ <div class="container">
+  <h2>Menu Dimsum</h2>
+  <p class="sub">Pilih varian favoritmu dan jumlah isi per porsi</p>
+  <!-- Kolom kartu menu Bootstrap dibuat di script.js. -->
+  <div class="row g-4 menu-track" id="dimsum-grid" role="region" aria-label="Daftar menu dimsum" tabindex="0"></div>
+ </div>
+</section>
+
+<!-- Informasi keunggulan produk dan layanan -->
+<section id="keunggulan" class="alt">
+ <div class="container">
+  <h2>Kenapa Dimsum Story?</h2>
+  <p class="sub">Alasan pelanggan kami kembali lagi</p>
+  <!-- Tata letak responsif: satu keunggulan per baris di ponsel, dua di tablet, empat di komputer. -->
+  <div class="row g-4 features">
+   <div class="feature col-12 col-sm-6 col-lg-3"><span>🥟</span><h3>Dibuat Segar</h3><p>Dimsum dibuat setiap hari, disajikan hangat.</p></div>
+   <div class="feature col-12 col-sm-6 col-lg-3"><span>💰</span><h3>Harga Terjangkau</h3><p>Porsi pas di kantong pelajar dan keluarga.</p></div>
+  <div class="feature col-12 col-sm-6 col-lg-3"><span>😋</span><h3>Banyak Pilihan Rasa</h3><p>Original, kuah, goreng, mentai, sampai lava.</p></div>
+   <div class="feature col-12 col-sm-6 col-lg-3"><span>📱</span><h3>Pesan Mudah</h3><p>Cukup klik dan pesan lewat WhatsApp.</p></div>
+  </div>
+ </div>
+</section>
+
+<!-- Galeri foto ulasan pelanggan -->
+<section id="ulasan" class="alt">
+ <div class="container">
+  <h2>Galeri Ulasan</h2>
+  <!-- Tata letak responsif: dua foto per baris di ponsel dan empat di layar lebar. -->
+  <div class="row g-3 review-photos">
+  <figure class="review-photo col-6 col-lg-3"><img src="ulasan%201.JPG" alt="Foto ulasan pelanggan 1" loading="lazy"></figure>
+  <figure class="review-photo col-6 col-lg-3"><img src="ulasan%202.JPG" alt="Foto ulasan pelanggan 2" loading="lazy"></figure>
+  <figure class="review-photo col-6 col-lg-3"><img src="ulasan%203.JPG" alt="Foto ulasan pelanggan 3" loading="lazy"></figure>
+  <figure class="review-photo col-6 col-lg-3"><img src="ulasan%204.JPG" alt="Foto ulasan pelanggan 4" loading="lazy"></figure>
+  </div>
+ </div>
+</section>
+
+<!-- Informasi lokasi, jam buka, dan kontak toko -->
+<section id="lokasi" class="alt">
+ <div class="container">
+  <h2>Lokasi &amp; Jam Buka</h2>
+  <p class="sub">Datang langsung atau pesan antar lewat WhatsApp</p>
+  <!-- Tata letak responsif: informasi bertumpuk di ponsel dan berjajar di komputer. -->
+  <div class="row g-4 info-grid">
+   <div class="col-12 col-md-6 col-lg-4"><div class="info"><h3>📍 Alamat</h3><p>Lihat alamat lengkap dan petunjuk arah di Google Maps.</p><a class="btn" href="https://share.google/7lxKIUCQSZSgXyAxL" target="_blank" rel="noopener">Buka Lokasi</a></div></div>
+   <div class="col-12 col-md-6 col-lg-4"><div class="info"><h3>🕒 Jam Buka</h3><p>Senin – Jumat: 10.00 – 21.00</p><p>Sabtu – Minggu: 09.00 – 22.00</p></div></div>
+   <div class="col-12 col-md-6 col-lg-4"><div class="info"><h3>📞 Kontak</h3><p>WhatsApp: <a href="https://wa.me/628813071270" target="_blank" rel="noopener">0881-3071-270</a></p><p>Instagram: @dimsumstory</p></div></div>
+  </div>
+ </div>
+</section>
+
+<!-- Langkah-langkah pemesanan melalui WhatsApp -->
+<section id="pesan" class="about">
+ <div class="container">
+  <h2>Cara Pesan</h2>
+  <p class="sub">Mudah dan cepat, cukup lewat WhatsApp</p>
+  <!-- Tata letak responsif: langkah bertumpuk di ponsel dan berjajar di layar yang lebih lebar. -->
+  <div class="row g-3 steps">
+   <div class="col-12 col-md-4"><div class="step"><span>1</span><p>Pilih menu dan ukuran atau isi</p></div></div>
+   <div class="col-12 col-md-4"><div class="step"><span>2</span><p>Klik tombol Pesan untuk membuka WhatsApp</p></div></div>
+   <div class="col-12 col-md-4"><div class="step"><span>3</span><p>Kirim pesan, tunggu konfirmasi, pesanan disiapkan</p></div></div>
+  </div>
+ </div>
+</section>
+
+<!-- Ajakan untuk menghubungi toko dan melakukan pemesanan -->
+<section class="cta">
+ <div class="container">
+  <h2>Lapar? Yuk Pesan Sekarang!</h2>
+  <p>Chat kami langsung untuk pemesanan dan pertanyaan.</p>
+  <a class="btn wa" href="#" data-order="Halo Dimsum Story, saya mau tanya menu dan pesan.">Chat WhatsApp</a>
+ </div>
+</section>
+
+<!-- Tautan informasi dan kontak pada bagian bawah halaman -->
+<footer>
+ <!-- Kolom bagian bawah halaman menyesuaikan lebar layar. -->
+ <div class="container foot row g-4">
+  <div class="col-12 col-md-6"><div class="logo" style="color:#fff">🥟 Dimsum Story</div><p>Setiap gigitan punya cerita.</p></div>
+  <div class="col-6 col-md-3"><b>Menu</b><a href="#menu">Dimsum</a><a href="#pesan">Cara Pesan</a></div>
+  <div class="col-6 col-md-3"><b>Hubungi Kami</b><a href="#" data-order="Halo Dimsum Story, saya mau tanya.">WhatsApp</a><a href="https://instagram.com/dimsumstory" target="_blank" rel="noopener">Instagram</a></div>
+ </div>
+ <p class="copy">© 2026 Dimsum Story. Semua hak dilindungi.</p>
+</footer>
+<!-- Tombol WhatsApp yang selalu terlihat saat halaman digulir -->
+<a class="float-wa" href="#" data-order="Halo Dimsum Story, saya mau pesan.">💬 Pesan</a>
+
+<!-- Memuat data menu dan interaksi halaman -->
+<script src="../script.js"></script>
+</body>
+</html>
